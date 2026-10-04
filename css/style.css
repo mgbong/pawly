@@ -169,11 +169,11 @@ h2 {
     top: 0;
     z-index: 10;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;               
     align-items: center;
     justify-content: space-between;
-    gap: 12px;
-    margin: 0;                                    
+    gap: 10px 12px;
+    margin: 0;
     padding: 14px clamp(16px, 5vw, 60px);
     border-radius: 20px 20px 0 0;
     background: linear-gradient(90deg, #f3fdf5, #f6fef6 50%, #edfdf1);
@@ -181,17 +181,12 @@ h2 {
 
 .navbar {
     display: flex;
-    flex-wrap: nowrap;
+    flex: 1 1 auto;                
     justify-content: center;
-    min-width: 0;
-    gap: 0 30px;                                 
+    gap: 0 30px;
     white-space: nowrap;
     font-size: 12px;
     font-weight: 500;
-}
-
-.nav .btn-1 {
-    background: linear-gradient(90deg, #2e9e4f, #5cbf70);
 }
 
 .logo {
