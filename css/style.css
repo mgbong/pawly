@@ -169,19 +169,18 @@ h2 {
     top: 0;
     z-index: 10;
     display: flex;
-    flex-wrap: wrap;               
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     gap: 10px 12px;
     margin: 0;
     padding: 14px clamp(16px, 5vw, 60px);
-    border-radius: 20px 20px 0 0;
     background: linear-gradient(90deg, #f3fdf5, #f6fef6 50%, #edfdf1);
 }
 
 .navbar {
     display: flex;
-    flex: 1 1 auto;                
+    flex: 1 1 auto;
     justify-content: center;
     gap: 0 30px;
     white-space: nowrap;
@@ -336,13 +335,21 @@ h2 {
     box-shadow: 0 10px 30px rgba(30, 120, 60, 0.1);
 }
 
-.float-top b,
+.float-top b {
+    display: block;
+    font-size: 12px;
+}
+
 .float-bottom b {
     display: block;
     font-size: 12px;
 }
 
-.float-top small,
+.float-top small {
+    display: block;
+    font-size: 11px;
+}
+
 .float-bottom small {
     display: block;
     font-size: 11px;
@@ -403,6 +410,7 @@ h2 {
     font-size: 12px;
     font-weight: 600;
 }
+
 .section {
     padding: clamp(48px, 8vw, 90px) clamp(16px, 5vw, 60px);
     background: radial-gradient(circle at top right, #eefbf0, #fbfefb 50%);
@@ -476,6 +484,7 @@ h2 {
     padding: 30px 24px;
     text-align: center;
 }
+
 .dogs {
     display: flex;
     flex-wrap: wrap;
@@ -572,13 +581,13 @@ h2 {
     text-align: center;
 }
 
-.cta-wrap {
+.contact {
     display: flex;
     justify-content: center;
     padding: clamp(24px, 5vw, 60px) clamp(16px, 5vw, 60px) clamp(40px, 6vw, 70px);
 }
 
-.cta {
+.contacts {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -591,11 +600,11 @@ h2 {
     text-align: center;
 }
 
-.cta h2 {
+.contacts h2 {
     margin-bottom: 6px;
 }
 
-.cta .sub {
+.contacts .sub {
     max-width: 520px;
     margin-bottom: 34px;
 }
