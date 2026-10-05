@@ -169,7 +169,8 @@ h2 {
     top: 0;
     z-index: 10;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    /* was: wrap */
     align-items: center;
     justify-content: space-between;
     gap: 10px 12px;
@@ -182,13 +183,21 @@ h2 {
     display: flex;
     flex: 1 1 auto;
     justify-content: center;
-    gap: 0 30px;
+    gap: 0 clamp(8px, 1.5vw, 30px);
     white-space: nowrap;
-    font-size: 12px;
+    font-size: clamp(10px, 1.4vw, 12px);
     font-weight: 500;
+}
+.nav-cta {
+    flex: none;
+    /* new: button never shrinks or drops down */
+    display: flex;
+    justify-content: flex-end;
 }
 
 .logo {
+    flex: none;
+    /* new: logo never shrinks */
     display: flex;
     align-items: center;
     gap: 10px;
