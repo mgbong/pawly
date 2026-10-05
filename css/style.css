@@ -170,7 +170,6 @@ h2 {
     z-index: 10;
     display: flex;
     flex-wrap: nowrap;
-    /* was: wrap */
     align-items: center;
     justify-content: space-between;
     gap: 10px 12px;
@@ -190,14 +189,12 @@ h2 {
 }
 .nav-cta {
     flex: none;
-    /* new: button never shrinks or drops down */
     display: flex;
     justify-content: flex-end;
 }
 
 .logo {
     flex: none;
-    /* new: logo never shrinks */
     display: flex;
     align-items: center;
     gap: 10px;
